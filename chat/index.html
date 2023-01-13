@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Page</title>
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <!-- Scripts -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="../plugins/js_plugin/bootstable.js" ></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/darkly/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>    
+        <div class="jumbotron text-center">
+            <h1>Chat Form</h1>                   
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Bulk Message To WhatsApp</div>
+                        <div class="card-body">                        
+                        <button id="but_add" class="btn btn-primary" style="margin-bottom: 10px;">Add</button>
+                        <table class="table table-responsive-md table-sm table-bordered" id="makeEditable">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Phone</th>
+                                <th style="width: 60%;">Message</th>
+                                <th style="width: 10%;">Status </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>19558524552</td>
+                                <td>Defaultson</td>
+                                <td>Success</td>
+                            </tr>
+                            <tr>
+                                <td>19558561482</td>
+                                <td>Doe</td>
+                                <td>Success</td>
+                            </tr>                            
+                            <tr>
+                                <td>19558561482</td>
+                                <td>Activeson</td>
+                                <td>Success</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <span style="float:right">
+                            <button class="btn btn-danger" id="submit_data">Send Message</button>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./jquery.min.js"></script>
+        <script src="./chat.js"></script>
+    </body>
+</html>
